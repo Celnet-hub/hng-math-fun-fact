@@ -19,11 +19,11 @@ async def get_math_properties(number):
             # raise HTTPException(status_code=400, detail = response)
             return JSONResponse(status_code=400, content=response)
         
-    if number < 0:
-        # raise HTTPException(status_code=400, detail="Number must be non-negative")
-        return JSONResponse(status_code=400, content="Number must be non-negative")
+    # if number < 0:
+    #     # raise HTTPException(status_code=400, detail="Number must be non-negative")
+    #     return JSONResponse(status_code=400, content="Number must be non-negative")
     
-    properties = math_service.get_properties(number)
+    properties = math_service.get_properties(abs(number))
     is_prime = properties["is_prime"]
     is_perfect = properties["is_perfect"]
     digit_sum = properties["digit_sum"]

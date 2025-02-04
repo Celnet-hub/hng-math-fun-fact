@@ -31,7 +31,7 @@ math-api
 
    ```
    git clone <repository-url>
-   cd math-api
+   cd hng-math-fun-fact
    ```
 
 2. Create a virtual environment:
@@ -55,6 +55,16 @@ math-api
    ```
    pip install -r requirements.txt
    ```
+
+## Running the application
+
+1. Start the FastAPI application:
+    ```bash
+    uvicorn app.main:app --reload
+    ```
+
+2. Open your browser and navigate to `http://127.0.0.1:8000` to see the JSON output.
+
 
 ## API Usage
 
