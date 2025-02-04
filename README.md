@@ -1,6 +1,4 @@
-# math-api/math-api/README.md
-
-# Math API
+# Math Fun Fact API
 
 This is a FastAPI-based application that provides interesting mathematical properties about a given number, along with a fun fact.
 
